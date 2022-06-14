@@ -1,13 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import ComplimentApp from './components/compliment/ComplimentApp';
+import Contact from './components/Contact/Contact';
+import NavBar from './components/Header/NavBar';
+import { Route} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <React.Fragment>
+
+   
+    <NavBar>
+        {/* <Route path='/ComplimentApp' component={ComplimentApp} />
+        <Route path='/contact' component={Contact} /> */}
+        <ComplimentApp/>
+    
+    
+
+    </NavBar>
+  
+
+    </React.Fragment>
   );
 }
 
